@@ -1,0 +1,18 @@
+# numeros primitivos:
+
+print('='*20)
+try:
+ n = int(input('Numero: '))
+
+ if n % 2 == 0:
+  sucessor = n + 1
+  antecessor = n - 1
+  print('{} é um número par.'.format(n))
+  print('O Antecessor de {} é: {} \nO Sucessor de {} é: {}'.format(n,antecessor,n,sucessor))
+ else:
+  sucessor = n + 1
+  antecessor = n - 1
+  print('{} é um número impar.'.format(n))
+  print('O Antecessor de {} é: {} \nO Sucessor de {} é: {}'.format(n,antecessor,n,sucessor))
+except Exception:
+ print('ERRO! Informe apenas números.')
